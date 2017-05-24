@@ -1,7 +1,6 @@
 FROM openjdk:8-jdk
 
 RUN apt-get update && apt-get install -y autoconf automake bison bzip2 curl g++ gawk gcc git libc6-dev libffi-dev libgdbm-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev libtool libyaml-dev make patch patch pkg-config sqlite3 sudo wget zip zlib1g-dev && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install -y git curl && rm -rf /var/lib/apt/lists/*
 
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000
